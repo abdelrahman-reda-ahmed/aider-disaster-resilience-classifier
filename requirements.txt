@@ -1,0 +1,33 @@
+# ---------------------------------------------------------------------------
+# requirements.txt -- AIDER emergency-response classifier
+#
+# A normal `pip install -r requirements.txt` works on Windows, Linux and
+# macOS.  The pinned PyTorch wheels are the CPU builds on Windows/macOS.
+#
+# On a CPU-only Linux box you can avoid downloading the CUDA runtime by
+# installing the two PyTorch packages from PyTorch's own CPU index *first*:
+#
+#     pip install torch==2.14.1 torchvision==0.29.1 \
+#         --index-url https://download.pytorch.org/whl/cpu
+#
+# and then `pip install -r requirements.txt` (pip will see them as satisfied).
+# ---------------------------------------------------------------------------
+
+# --- deep-learning core ----------------------------------------------------
+torch==2.14.1
+torchvision==0.29.1
+
+# --- numerical / data ------------------------------------------------------
+numpy==2.5.2
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+
+# --- plotting / reporting --------------------------------------------------
+matplotlib==3.11.2
+seaborn==0.13.2
+tabulate==0.10.0
+
+# --- images / progress ------------------------------------------------------
+Pillow==12.3.0
+tqdm==4.70.1

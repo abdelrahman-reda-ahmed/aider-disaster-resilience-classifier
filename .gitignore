@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------------------
+# Virtual environments (recreate with `python -m venv .venv`)
+# ---------------------------------------------------------------------------
+.venv/
+venv/
+env/
+
+# ---------------------------------------------------------------------------
+# Python bytecode / caches
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# Editors / OS
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# ---------------------------------------------------------------------------
+# Large regenerable dataset archive.
+# The *extracted* dataset in data/AIDER/ IS committed so a clone needs no
+# download.  data.py re-creates this archive automatically if it is missing
+# (see AIDER_URL / AIDER_MD5 in config.py).
+# ---------------------------------------------------------------------------
+data/AIDER.zip
+
+# ---------------------------------------------------------------------------
+# Training artifacts that `python run_all.py` regenerates.
+# Deliberately NOT committed:
+#   * checkpoints/   - best weights per (experiment, seed); large and rebuilt
+#   * results/logs/  - per-epoch history CSVs + stdout logs
+# Keeping them out means a fresh clone always retrains from scratch instead of
+# silently resuming on stale artifacts.  The *results* (tables, summary,
+# figures) are committed.
+# ---------------------------------------------------------------------------
+checkpoints/
+results/logs/
