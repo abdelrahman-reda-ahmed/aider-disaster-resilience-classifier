@@ -67,8 +67,8 @@ on a CPU-only laptop and much less on a GPU — measured numbers are in §6 and
 |---|---|---|
 | `*.py`, `README.md`, `requirements.txt` | yes | all source code |
 | `data/AIDER/` | yes | the 6,433-image dataset |
-| `results/` (`*.csv`, `summary.md`, `figures_index.md`) | yes | result tables + report |
-| `figures/` | yes | all 300 dpi PNG figures |
+| `results/*.csv`, `results/cleaning_report.json` | yes | EDA + split tables from the data step |
+| `results/summary.md`, metric tables, `figures/` | generated | written when you run `python run_all.py` |
 | `data/AIDER.zip` | no | 263 MB archive; re-downloaded on demand |
 | `checkpoints/` | no | regenerated weights (a clone retrains cleanly) |
 | `results/logs/` | no | per-epoch training logs |

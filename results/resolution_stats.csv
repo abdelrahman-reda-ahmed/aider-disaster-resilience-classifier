@@ -1,0 +1,7 @@
+scope,n,width_min,width_median,width_max,height_min,height_median,height_max
+ALL,6431,123,400.0,5184,152,360.0,3456
+collapsed_building,511,123,382.0,4000,152,369.0,3072
+fire,521,151,416.0,3264,155,378.0,2448
+flood,526,155,529.0,5184,155,431.5,3456
+normal,4388,175,400.0,5120,175,360.0,2880
+traffic_accident,485,180,391.0,2447,160,369.0,2276

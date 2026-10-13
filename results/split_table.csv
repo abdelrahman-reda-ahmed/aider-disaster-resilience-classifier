@@ -1,0 +1,6 @@
+class_name,train,val,test,total
+collapsed_building,357,77,77,511
+fire,365,78,78,521
+flood,368,79,79,526
+traffic_accident,339,73,73,485
+normal,3072,658,658,4388

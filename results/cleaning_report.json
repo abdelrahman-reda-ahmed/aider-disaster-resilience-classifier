@@ -1,0 +1,13 @@
+{
+  "n_scanned": 6433,
+  "n_kept": 6431,
+  "n_removed_unreadable": 0,
+  "n_removed_zero_size": 0,
+  "n_removed_duplicate": 2,
+  "n_removed_total": 2,
+  "removed_per_class_per_reason": {
+    "duplicate": {
+      "normal": 2
+    }
+  }
+}
